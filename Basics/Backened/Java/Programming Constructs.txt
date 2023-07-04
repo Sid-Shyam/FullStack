@@ -1,0 +1,111 @@
+Program: A program is a set of instructions that computer executes.
+Programming Language: A programming language is a language which the computer understands. 
+						it just like any other language with its own syntax and constructs.
+						The programmer uses it to make the computer follow his instructions.
+
+Difference b/w Programming and Computer Science
+
+			Programming										Computer Science				
+
+Programming is instructing the computer			Computer science is a study of computers and 
+by means of programming language to perform		computational systems.
+certain tasks for your desired output			It is the scientific and pratical approach to
+A good grasp of certain programming language	computation and its applications. The more you
+are enough even without a computer degree		the theories in this field the better programmer 
+												you become. As a result you write most efficient
+												code with minimum resources.
+
+
+Programming Constructs (or also called Programming concepts)
+
+	Simply we just know a program is a set of instructions thata computer executes. 
+	But i didn't get the details about the order of they would be executed.
+	This is were programming constructs comes into action.
+	-->Programming Constructs are used to control the order/flow of instructions are executed(or not executed).
+	-->In programming languages, the expression which translates to an instruction is called a programming statement or just statement.
+	
+There are number of recongized basic programming constructs that can be classified as follows
+1.Sequences (First floor)
+2.Selection (Second floor)
+3.Repetition (Third floor)
+I have used the concept of 'Floors' to help you visualize better how to go about constructing a program.
+
+1.Sequence
+			A sequence construct tells the CPU (processor) which statement is to be executed next. 
+			By default, in popular languages, this is the statement following the current statement 
+			or first statement in the program. In other words, this is the very basic construct of 
+			writing a program. You just write line by line what you have in mind (of-course related to programming)
+			
+2.Selection
+			A selection statement provides for selection between alternatives, alternative as 
+			in available route options for instruction execution.
+			A program can take certain route depending on a situation and selection statements help in choosing between the routes.
+		A selection statement provides for selection between alternatives. We can identify three types of selection construct:
+
+1.If statements
+2.Case statements
+3.Pattern matching
+		For example,In a factory, if an employee is present then calculate the salary for 8 hours,
+		otherwise do not calculate the salary, just put a big zero (no work no doe).
+
+		So depending on the state of the employee (whether present or not) 
+		you are asking the program to do one of two things - a) when employee is present 
+		calculate salary, b) when employee is absent put salary as 0 and the processor will choose between taking "path a" or" path b" but not both.
+		
+3.Repetation
+			A repetition construct causes a group of one or more program statements to be invoked repeatedly until some end condition is met.
+
+			Let's stick with the salary case, and try to give the salary for a whole month.
+			For simplicity sake, let's consider we have 20 working days in a month and we have to calculate the whole month's salary for the employee.
+
+			Since we already calculated the salary for 1(one) day based on employees's present or absent status, we repeat the same process for 20 days 
+			and Ta'Da we have calcuated the whole month's salary for the employee. Simple (!) isn't it ?
+
+			In this case "some end condition is met" would refer to the whether we have repeated the same sequence of instructions or iterated 20 times or not. 
+			We also use the term 'loop' instead of repetation or iteration.
+			(Here 20 iterations are required for 20 days).
+			
+			Typically such constructs are used to step through arrays or linked lists. We can identify two main forms of repetition:
+
+1.Fixed count loops - repeat a predefine number of times.
+2.Variable count loops - repeat an unspecified number of times.
+
+To which we could add recursion (routine calls itself). Recursion is not used so much in imperative languages, 
+although it is the principal program construct used to achieve repetition in logic and functional languages, 
+thus we will confine ourselves in the following discussion to fixed and variable count loops.
+
+Pretest and posttest loops
+		Both fixed and variable count loops can be further classified according to whether they are pretest or posttest loops.
+		
+	The loop in which first condition is checked and then body of loop is executed,is called pretest loop.
+
+	Pretest loops are: for loop and while loop.
+
+	The loop in which first the body of loop is executed and then condition is checked,is called post-test loop.
+	In post test loop the body is executed at least ones.
+	
+	Post-test loop is: do-while loop.
+
+4.Routine Invocation
+		Routine (or procedure) invocation is particular to imperative languages. When a 
+		sequence of statements forms a conceptual unit about which it is possible and useful to think 
+		and reason in isolation it is convenient to encapsulate the sequence in a named routine (procedure)
+		and to replace it with a procedure call in the original code. Unlike a goto statement, 
+		routine invocation guarantees that the flow of control will eventually return to the point 
+		from which the routine was called (the procedure call).
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.Give instructions one after another
+2.Select certain paths based on certain conditions
+3.Iterate/loop through previous steps over and over until we have achieved a certain outcome.
