@@ -1,0 +1,90 @@
+Wire Frame
+-----------
+What is WireFraming?
+
+WireFraming is simply an idea of how you want your data to be shown up on the pages. 
+It is basically a blueprint or skeleton of the webpage that represents how your product should look like. 
+
+A good wireframe represents the overall structure of the web pages and the flow of navigation on these pages. 
+Imagine you’re designing a mobile app. You would need to create a wireframe for each screen that the user moves through when using a wireframe. 
+
+Wireframe is used to define and plan the information hierarchy on a page or screen. 
+How should the items on the page be organized, what content goes where such as navigation bar, images, videos, etc. 
+How should space be allocated? What functionalities are available? Basically in Wireframing, 
+you represent the positioning of different elements such as buttons, menus, images, videos, and headings. 
+
+Wireframing is all about what kind of data we want the user to just see at the very first end known as primary data 
+and what are the data that can be moved on to the second page so that the user clicks on it and sees that data. 
+
+If you see a two-dimensional drawing of pages interface in a color black and white then most probably it’s a wireframe. 
+
+In wireframing, remember that your main objective is not to represent how the buttons should look like or what color, images, videos, paragraph, or taglines needs to be used.
+
+Benefits of Wireframing
+
+Big companies create wireframes before they actually move to the coding part but if you’re a freelancer then surely you will face a lot of problems. 
+
+Imagine a scenario that you are working on a product and you simply start building it after gathering the requirements. 
+How would you feel if your client is requesting you to change the things regularly on your webpage? 
+What if your client is mocking you every time to move the things here and there on your webpage? 
+
+All the above cases are really frustrating for UX designers. 
+Changing things regularly is not a good practice in the UX design process. 
+It increases the cost and you invest more money in the development phase. 
+
+You can get rid of these problems if you create a wireframe before moving to the coding part. 
+Your client can also create that for you and he/she can also show how the website should look like. 
+It completely depends on both of you. 
+
+Wireframing is a great way to get to know how a user interacts with the user interface through the positioning of different elements. 
+It gives you clarity that how your final product should look like. 
+Wireframe makes the coding or development phase a lot easier for developers and designers. 
+
+You can choose any one of the given below to create a wireframe for your software…
+
+1. Using pen and paper (Yes…your childhood best friend in studies. Old is gold….)
+
+2. Using some online tools or software.
+
+Drawing your wireframe by hand can be a good way to keep things basic and resist a temptation to get lost in unnecessary details. 
+Once you’re happy with your hand-drawn wireframe you can switch to the digital wireframe. 
+
+To create digital wireframes, there is plenty of software and tools available online. 
+Balsamiq and Invision is the most popular software among developers. 
+Digital wireframing allows you to keep track of the progress of your wireframe and to document certain decisions you make along the way. 
+Digital wireframes are also easier to share.
+
+Types of Wireframes
+------------------------
+Mainly there are three categories of wireframes and based on the number of details they contain you can differentiate each one of them.
+
+1. Low-fidelity Wireframes
+The basic visual structure of the software is represented with the low fidelity Wireframes. 
+These are basically rough sketches of your application’s webpage and it is considered as the starting point of software designs. 
+
+There is no need to add too many details in low fidelity wireframes. 
+Add only simplistic images, block shapes, and basic elements such as headings, labels, etc. 
+Adding too much detail can be distracting, so keep it as simple as possible. 
+You can create, low-fidelity wireframes without worrying too much about the scale, grid, or pixel accuracy. 
+
+These wireframes are useful when you’re starting your conversation with the stakeholder and you need to give your client a rough sketch idea of the application. 
+Both of you decide the basic layout such as navigation layout and mapping the user flow.
+
+2. Mid-fidelity Wireframes 
+Mid fidelity wireframes have some detailed and accurate description than low fidelity. 
+Out of three wireframes, mid-fidelity wireframes are the most commonly used by designers because neither it takes too much time to create (like high fidelity) nor gives very fewer details (like low fidelity) to the stakeholder. 
+These wireframes are relevant to create at the early stages of designing the product. 
+
+These wireframes also avoid distractions such as images or typography. 
+In mid-fidelity wireframes, various components of software and features are clearly visible and can be easily differentiated from each other. 
+Varying text weights can be used to separate headings from the body content. 
+Sometimes designers use the gray shade in the wireframe for highlighting the individual elements in it. 
+These wireframes can be created using the software Sketch or Balsamiq.
+
+3. High-fidelity Wireframes
+High fidelity wireframes represent a much more detailed description then mid-fidelity wireframes. 
+These wireframes boast a pixel-specific layout. In low fidelity wireframes, we represent the content with some pseudo-Latin text fillers and for images, 
+we create some grey boxes filled in with an ‘X’. This is not in the case of high-fidelity wireframes. 
+High-fidelity wireframes may include the actual featured images and relevant written content. 
+
+With a detailed description of high-fidelity wireframes, it’s easy to understand and document complex concepts such as menu systems or interactive maps.

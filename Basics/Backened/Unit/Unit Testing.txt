@@ -1,0 +1,123 @@
+Unit Testing
+-------------
+
+The primary objective of unit testing is to isolate a code section and test it's  correctness.
+It helps to uncover early bugs and flaws in application code that can be more challenging to identify in the later stages of the software testing life cycle(STLC).
+
+What is Unit testing?
+Unit testing is a form of testing written for specific units of functionality.
+It tests each element of a system or component in isolation, ensuring that it does not affect the rest of your codebase other than the part under test.
+It, therefore, isolates one specific piece of functionality, ensures correctness, and verifies that there are no bugs, allowing bug fixes to be done quickly before merging it into the main code.
+
+Unit testing is a form of white-box testing and is often done by writing test cases that exercise individual functions, methods, and classes. 
+Tests are typically written in pseudocode (implemented in a language such as Java or JavaScript), but they can also be written in plain English. 
+The method chosen depends on what language you're using.
+
+Different techniques of Unit testing
+
+The Unit testing techniques can be classified into three parts which help unit testers validate each unit of the application's code in isolation. 
+These techniques fulfill different software requirements and ensure its proper functioning.
+
+The different techniques of Unit testing are
+
+1.Whitebox testing:
+			It's also referred to as glass box or transparent testing. In this type of testing, the tester is aware of the application's internal functionality 
+			and can test it against the design and requirements. However, the internal structure of an application’s component or function to be tested is unknown.
+2.Black-box testing:
+			In this type of unit testing, testers validate the software application's user interface, along with its input and output.
+3.Gray-box testing: 
+			It is a blend of whitebox and black-box testing, also known as semi-transparent testing. In this type of testing, the testers are not completely 
+			aware of the application internals, functionality, and design requirements. Gray-box testing covers different types of testing like matrix testing, 
+			pattern testing, orthogonal pattern testing, and regression testing.
+
+
+							Unit testing													Integration testing
+1.Unit testing focuses on the individual modules of the application.		1.Integration testing focuses on the combined modules of the application.
+
+2.It is usually the first level of testing but can be 						2.It is performed after Unit testing and before System testing.	
+performed at any time.	
+
+3.It can be performed by developers, testers, and QA engineers.				3.Only performed by testers.
+
+4.It is a white-box testing technique.										4.It is a black-box testing technique.
+
+5.It can be carried out without the completion of 							5.Only be carried out after the completion of all the parts of the software.
+all the parts of the software.	
+
+6.It is easy to maintain, run and debug.									6.It’s comparatively high maintenance and slower to run.
+
+7.The issues are easy to find and can be instantly fixed.					7.The cost of fixing issues is higher and takes longer to resolve.
+
+8.It is limited in scope and may not catch integration errors.				8.It has a wider scope and may detect system-wide issues.
+
+9.It focuses on module specification.										9.It focuses on interface specification.
+
+
+How to perform Unit testing?
+
+Unit tests are fast and easy to write, run, and debug — but that doesn't mean you should skip them altogether. 
+Unit tests can take time to set up, especially if they're not automated, so it's important to find ways to speed up their creation, according to most DevOps principles.
+
+You can perform Unit testing in two ways:
+
+Manual Unit testing: 
+			It involves executing each stage of the test manually. Since manual testing is carried out without any automation tool, 
+			it's time-consuming and tedious, especially for repetitive test cases, and requires more effort to develop and run test cases.
+
+Automated Unit testing: 
+			It involves automating repetitive manual tasks using automated testing tools. 
+			With tools for automated testing, you can record, save and replay your tests without manual effort.
+
+However, when you test a website, many issues might be unrevealed related to usability. 
+For example, specific functionality of your website works fine on Chrome 99 (Windows 11) but doesn’t work on Firefox 97 (Windows 11). 
+This makes cross browser testing extremely important to fix such usability issues before your customer finds them.
+
+
+Software testing can be stated as the process of verifying and validating whether a software or application is bug-free, meets the technical requirements as guided by its design and development, and meets the user requirements effectively and efficiently by handling all the exceptional and boundary cases. 
+
+The process of software testing aims not only at finding faults in the existing software but also at finding measures to improve the software in terms of efficiency, accuracy, and usability. It mainly aims at measuring the specification, functionality, and performance of a software program or application. 
+
+Software testing can be divided into two steps: 
+1. Verification: it refers to the set of tasks that ensure that the software correctly implements a specific function. 
+
+2. Validation: it refers to a different set of tasks that ensure that the software that has been built is traceable to customer requirements. 
+
+Verification: “Are we building the product right?” 
+Validation: “Are we building the right product?” 
+
+What are different types of software testing? 
+
+Software Testing can be broadly classified into two types: 
+
+1. Manual Testing: Manual testing includes testing software manually, i.e., without using any automation tool or any script. In this type, the tester takes over the role of an end-user and tests the software to identify any unexpected behavior or bug. There are different stages for manual testing such as unit testing, integration testing, system testing, and user acceptance testing. 
+
+Testers use test plans, test cases, or test scenarios to test software to ensure the completeness of testing. Manual testing also includes exploratory testing, as testers explore the software to identify errors in it. 
+
+2. Automation Testing: Automation testing, which is also known as Test Automation, is when the tester writes scripts and uses another software to test the product. This process involves the automation of a manual process. Automation Testing is used to re-run the test scenarios quickly and repeatedly, that were performed manually in manual testing.
+
+Apart from regression testing, automation testing is also used to test the application from a load, performance, and stress point of view. It increases the test coverage, improves accuracy, and saves time and money when compared to manual testing. 
+
+What are the different types of Software Testing Techniques ? 
+
+Software testing techniques can be majorly classified into two categories: 
+
+1. Black Box Testing: The technique of testing in which the tester doesn’t have access to the source code of the software and is conducted at the software interface without any concern with the internal logical structure of the software is known as black-box testing. 
+
+2. White-Box Testing: The technique of testing in which the tester is aware of the internal workings of the product, has access to its source code, and is conducted by making sure that all internal operations are performed according to the specifications is known as white box testing. 
+
+Black Box Testing	White Box Testing
+Internal workings of an application are not required.	Knowledge of the internal workings is a must.
+Also known as closed box/data-driven testing.	Also known as clear box/structural testing.
+End users, testers, and developers.	Normally done by testers and developers.
+This can only be done by a trial and error method.	Data domains and internal boundaries can be better tested.
+What are different levels of software testing? 
+
+Software level testing can be majorly classified into 4 levels: 
+
+1. Unit Testing: A level of the software testing process where individual units/components of a software/system are tested. The purpose is to validate that each unit of the software performs as designed. 
+
+2. Integration Testing: A level of the software testing process where individual units are combined and tested as a group. The purpose of this level of testing is to expose faults in the interaction between integrated units. 
+
+3. System Testing: A level of the software testing process where a complete, integrated system/software is tested. The purpose of this test is to evaluate the system’s compliance with the specified requirements. 
+
+4. Acceptance Testing: A level of the software testing process where a system is tested for acceptability. The purpose of this test is to evaluate the system’s compliance with the business requirements and assess whether it is acceptable for delivery. 
