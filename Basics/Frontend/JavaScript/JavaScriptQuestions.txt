@@ -1,0 +1,265 @@
+JavaScript Questions and Answers
+1.Why do we call javascript as a dynamic language?
+A.JavaScript is a dynamic language means that data types of variables can change during runtime
+	for example 
+	let i defined a varible <script> var a=0;//here typeof(a): number 
+	a++;//here alos typeof(a): number
+	a='shaym';//here typeof(a): string
+	a=true;//here typeof(a): boolean
+	so at runtime same variable har different data types are assigned so it makes javascript as a dynamic language.
+	</script>
+
+2.How does javascript determines data types?
+A.JavaScript determines datatypes by looking at the value which it is assigned
+		for ex:
+		<script>
+		var x=28;
+		name=typeof(x);// here the name variable will understood to hava a data type is number
+		x='shyam';
+		name=typeof(x);// here the name variable will understood to hava a data type is string
+		x=true;
+		name=typeof(x);// here the name variable will understood to hava a data type is boolean
+		
+	So JavaScript determines data types depending on the value assigned.
+
+
+3.What are the different data types in javascript?
+A.There are two types of data types in javascript
+		1.Primitive datatypes 
+			*String var s="shyam";
+			*Number var n=28
+			*Null var nu= null;
+			*Undefined var un = undefined;
+			*BigInt var a=100
+			*Boolean var bo= true;
+			*Symbol var sym= new Symbol();
+		2.Objects
+			*object var obj=new Object();
+			
+Most used datatypes in javascript are Strng,number, boolean,null,undefined and object.
+
+
+4.What is undefined in javascript explian it?
+A.Undefined means the variable has been declared but no value is assigned to it.
+
+5.What is Null?
+A. Null is a data type which indicates intentional absence of data. Null indicates it is not zero, it is not empty it just absence of data.
+
+6.Null vs Undefined?
+A.								Null										Undefined					
+	We assign value Null, it indicates absence of data		Variable has created but value is not assigned.
+	
+
+7.Explain Hoisting?
+A.Hoisting is a mechanism where variables and function declartaion are moved to top of the scope before the code executes.
+ex:
+console.log(a);// here a is undefined
+var a='shyam";
+
+8.Are javascript initialization hoisted?
+A.No
+
+9.What are the issues with the Global variables?
+A.It makes hard to debug
+
+10.What happwns if we declare a variable without the var keyword?
+A.Without Var,Then the variable becomes Global
+It also results to hard to debug.
+For ex:
+var x=2;
+function test(){
+y=3; // here it is not declared with var so variable becomes global variable. 
+console.log(y);
+}
+test();
+console.log(y);//we can access here also y=3;
+
+
+11.What is Use Strict?
+A.Use Strict is a directive which says strictly check if the variables are defined with the var keyword or not.
+If it is not defined with the var keyword then it will thrown an exception.
+for ex:
+<script>
+"use strict"
+var x=10;
+y=5;//exception is thrown because var keyword is not used.
+function test(){
+t=6;//exception is thrown because var keyword is not used.
+}
+</script>
+
+
+12.How can we avoid Global variable issues?
+A.1.Global variables are needed in our project so it is very difficult to avoid global variables but we have to avoid global variables
+WE Cannot avoid global variable(singluar) but we can avoid global variables
+As a best practice we can put global variable in a proper common namespace so that it is not polluting all across the web page,rather than creating individual global variable
+ex: var global={};
+global.variable1="test";
+global.variable2=22;
+2.We can create closure and apply module pattern. Module pattern  using Closures and IIFE
+	For  closure we have separte set
+	ex:
+	var myGlobal=(function(){
+					var connectionString="test";
+					function GetConnection(){
+					return connectionString;
+					}
+					return{
+					GetConnection}
+	var str=myGlobal.GetConnection();
+
+13.What are Closures and Why do we need them?
+A.Simple definition:
+		Closures are stateful functions, they are functions inside function and it makes a normal function stateful.
+	Why we need them?
+	A.To create self contained functions,codes,modules,state
+	so in general it avoid the global variables problems due to self-contained variables,modules,or states
+	
+	Closures are useful to create self contained code, functions that leads to a self contained state and we avoid global variables.
+	
+14.Explian IIFE?
+A.IIFE (Immediately Invoked Function Expression). it's an anonymous function which gets immediately invoked.
+	for example:
+	<script>
+	var x=0;
+	(function(){
+	var y=28;
+	alert("This is IIFE and i will execute once once the page loads);
+	})();
+	alert(y);
+	</script>
+
+15.What is name collsion?
+A.Name collsion happens when same name function names and variable names are declared. 
+	like<script>
+	function init(){  // here init is a function
+	var y=3;
+	alert(y);
+	}
+	var init=3;// here init is a variable
+	init();//there is an exception is thrown because there is no function with name init as init is changed to variable dynamically.
+	</script>
+	
+Because IIFE does not have any name, So there is no way you can get name collsion.
+
+16.Normal function vs IIFE?
+A.A normal function has  a name while IIFE does not have any name.
+So with normal function you can have name collsion,but with IIFE you don't have any name collsion.
+
+17.What are design patterns? Use of Design patterns?
+A.Design patterns are time tested solutions.
+		So, to create a single instance we can use singleton pattern, if the object creational process is complex,we can use factory pattern and so on.
+		Most used Design pattern:Module design pattern or the Module revealing pattern.
+		Module pattern or revealing module pattern has 2 big advantages:
+		1.Self-Contained independent components.
+		2.Provides Encapsulation and Abstraction
+		
+		Module Design Pattern = IIFE(namespace) + Closures(Encapsulation)
+		Example
+		<script>
+		var custNs= (function(){
+		function custName(){}
+		function  customerInvoices(){}
+		function customerValidation(){
+		}
+		
+		return {
+		custName,
+		customerInvoices //revealing pattern 
+		}
+		})();//Usage of IIFE
+		
+	var cust=new custNs.custName();// it wiil work
+	var cust=new custNs.customerValidation();// it wiil not work
+	
+18.How many ways to create an object in javascript?
+A.<script>
+//1.Literal
+var man={"name":"","address":""};
+man.action=function(){
+alert{"Yeah it is Salaar"};
+}
+//2.object.create
+var Man=Object.create(man);
+Man.age=28;
+//3.Constructor
+function Mass(){
+this.name="Salaar";
+this.age=28;
+this.movie=function(){
+}
+}
+var prasanth= new Mass();
+//4.class ES6 syntax
+class MovieClass{
+constructor(name,age){
+this.name="";
+this.age=28;
+}
+}
+var mass= new MovieClass();
+
+19.How can we do inheritance in javascript?What is prototype in javascript?Explian prototype chaining?
+A.JavaScript uses Object inheritance or prototypical inheritance. Inheritance is done using Prototype Object.
+Example
+<script>
+function Employee(){
+	this.Name="";
+	this.DoWork=function(){
+	alert("Basic Work");
+	}
+	this.Attendance= function(){
+	alert("Attendance needed");
+	}
+	}
+	function Manager(){
+	this.Cabin="";
+	this.DoWork=function(){
+	alert("Manages team");
+	}
+	}
+	var emp= new Employee();
+	Manager.prototype=emp;
+	var man=new Manager();
+	man.Name="shyam";
+	man.Attendance();
+	man.DoWork();
+</script>
+*Every JavaScript object has a Prototype object.
+*It's an inbuilt object provided by JavaScript.
+Prototype chaining is a process where the property/methods are first checked in the current object,
+if not found then it checks in the prototype object, if does not find in that it try checking the prototypes prototype object, until he get the prototype object null.
+
+	
+20.Are Let variables hoisted?
+A.<script>
+console.log(x);//in var Hoisting happens and default value is undefined because var variables.
+console.log(y);//Yes, they are hoisted but not initialized. So, if you try to access the variables you will get an uninitialized error.
+let y=10;
+var x=28;
+</script>
+
+21.Explian Temporal Dead Zone?
+A.Temporal Dead Zone is a period or it's a state of a variable where variables are named in memory but they are not intialized with any value.
+Example
+<script>
+console.log(x);//this is a Temporal Dead Zone
+console.log(x);//this is a Temporal Dead Zone
+let x=28;//End of Temporal Dead Zone
+function test(){
+console.log(y)//this is a Temporal Dead Zone
+//this is a Temporal Dead Zone
+let y=10;//End of Temporal Dead Zone
+}
+test();
+</script>
+
+22.Var vs Let
+A.								Var									Let					
+	scope			Scoped to the immediate function		Scoped to the immediate enclosing
+					body.									block.
+
+	Initialized		Value initialized with Undefined		Value initialized with nothing.
+	value
+	
+	

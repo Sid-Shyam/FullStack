@@ -1,0 +1,38 @@
+Testing Framework
+--------------------
+A testing framework is a set of guidelines or rules used for creating and designing test cases. 
+It is comprised of a combination of practices and tools that are designed to help QA professionals test more efficiently. 
+By using a testing framework, you can increase the accuracy and performance of software testing to high levels. 
+
+Why use a testing framework
+Beacuse the testing-process has 6-stages 
+1.Prepartion 
+2.Provide the inputs
+3.Run the test
+4.Provide the expected output
+5.Verify result
+6.Do something to alert the developer if test has failed
+
+The mandaratory stages for any code by developer are Prepartion the test case, Providing the inputs and Providing the expected output.
+
+but rest of the three stages are common to any code by the developer so these stages are handled by Testing Framework.
+
+Why we use Junit5 instead of Junit4?
+1.Junit4 > 10 years old
+2.Not up to date with newer testing patterns
+3.Not up to date with java language features
+4.Monolithic architecture (it has only one jar file)
+5.Bugs and features requests piled up
+
+
+Junit5 architecture
+----------------------
+									Platform(is the core of Junit)it is a test engine
+									
+				Junit API			Vintage(other set of API)						Extend API
+				 Jupiter		It has ability to run older(junit4) tests		You can come up with different API
+													
+														User
+					(he can come up with any of the three API and use test engine(platform))
+
+

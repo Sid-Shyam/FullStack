@@ -1,0 +1,71 @@
+40) What is the static method?
+A static method belongs to the class rather than the object.
+There is no need to create the object to call the static methods.
+A static method can access and change the value of the static variable.
+More Details.
+41) What are the restrictions that are applied to the Java static methods?
+Two main restrictions are applied to the static methods.
+
+The static method can not use non-static data member or call the non-static method directly.
+this and super cannot be used in static context as they are non-static.
+42) Why is the main method static?
+Because the object is not required to call the static method. If we make the main method non-static, JVM will have to create its object first and then call main() method which will lead to the extra memory allocation. More Details.
+
+43) Can we override the static methods?
+No, we can't override static methods.
+
+44) What is the static block?
+Static block is used to initialize the static data member. It is executed before the main method, at the time of classloading.
+
+class A2{  
+  static{System.out.println("static block is invoked");}  
+  public static void main(String args[]){  
+   System.out.println("Hello main");  
+  }  
+}  
+Test it Now
+Output: static block is invoked
+       Hello main
+
+More Details.
+45) Can we execute a program without main() method?
+Ans) No, It was possible before JDK 1.7 using the static block. Since JDK 1.7, it is not possible. More Details.
+
+46) What if the static modifier is removed from the signature of the main method?
+Program compiles. However, at runtime, It throws an error "NoSuchMethodError."
+
+47) What is the difference between static (class) method and instance method?
+static or class method	instance method
+1)A method that is declared as static is known as the static method.	A method that is not declared as static is known as the instance method.
+2)We don't need to create the objects to call the static methods.	The object is required to call the instance methods.
+3)Non-static (instance) members cannot be accessed in the static context (static method, static block, and static nested class) directly.	Static and non-static variables both can be accessed in instance methods.
+4)For example: public static int cube(int n){ return n*n*n;}	For example: public void msg(){...}.
+48) Can we make constructors static?
+As we know that the static context (method, block, or variable) belongs to the class, not the object. Since Constructors are invoked only when the object is created, there is no sense to make the constructors static. However, if you try to do so, the compiler will show the compiler error.
+
+49) Can we make the abstract methods static in Java?
+In Java, if we make the abstract methods static, It will become the part of the class, and we can directly call it which is unnecessary. Calling an undefined method is completely useless therefore it is not allowed.
+
+50) Can we declare the static variables and methods in an abstract class?
+Yes, we can declare static variables and methods in an abstract method. As we know that there is no requirement to make the object to access the static context, therefore, we can access the static context declared inside the abstract class by using the name of the abstract class. Consider the following example.
+
+abstract class Test  
+{  
+    static int i = 102;  
+    static void TestMethod()  
+    {  
+        System.out.println("hi !! I am good !!");  
+    }  
+}  
+public class TestClass extends Test   
+{  
+    public static void main (String args[])  
+    {  
+        Test.TestMethod();  
+        System.out.println("i = "+Test.i);  
+    }  
+}  
+Output
+
+hi !! I am good !!
+i = 102

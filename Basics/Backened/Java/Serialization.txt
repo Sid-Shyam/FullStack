@@ -1,0 +1,18 @@
+Serialization:
+main points:
+				Only the objects of those classes can be serialized which are implementing java.io.Serializable interface. 
+				Serializable has no data memeber and method, so it's a marker interface. 
+				it is used to "mark" java classes so that objects of these classes  may get certain capability.
+
+1.During the Serialization process only non-static data memebers are saved. static data memebers are not.
+2.If you don't want to save the value of a non static data memeber you can make it transient and that means it won't be saved via the serialization process.
+3.In Java, if a parent class implements the Serializable interface, its child classes automatically inherit the serializability behavior. 
+This means that the child classes don't need to explicitly implement the Serializable interface to be serializable.
+
+However, the reverse is not true. If a child class implements Serializable, it does not automatically make the parent class serializable. 
+Each class must explicitly implement Serializable individually in order to be serializable.
+
+4.If a class has a reference to another class, all the references must be serializable otherwise the serialization process will not be performed. 
+In such case, NotSerialixationException is thrown at runtime.
+
+5.When an object is deserialized the constructor of the object is never called.

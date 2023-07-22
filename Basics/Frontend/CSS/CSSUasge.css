@@ -1,0 +1,16 @@
+.Div1{
+    height: 100%;
+    width: 100%;
+    display:flexbox;
+    justify-content:baseline;
+    align-items: baseline;
+}
+.Div2{
+    width: 100%;
+    display:contents;
+    justify-content:first baseline;
+    align-items:flex-start;
+}
+#nameHeading{
+background-color: red;
+}
